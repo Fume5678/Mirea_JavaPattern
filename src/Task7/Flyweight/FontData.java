@@ -46,4 +46,9 @@ public final class FontData{
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return (fontSize * 37 + effectSet.hashCode() * 13) * fontFace.hashCode();
+    }
 }

@@ -9,6 +9,7 @@ import java.util.EnumSet;
 import java.util.Set;
 import java.util.WeakHashMap;
 
+
 public final class FontData{
     private static final WeakHashMap<FontData, WeakReference<FontData>> flyweightData =
             new WeakHashMap<>();
@@ -22,7 +23,7 @@ public final class FontData{
         this.effectSet = effectSet;
     }
 
-    public static FontData create(String fontFace, int fontSize, FontEffect... effects){
+    public static FontData create(int fontSize, String fontFace, FontEffect... effects){
         EnumSet<FontEffect> effectsSet = EnumSet.noneOf(FontEffect.class);
         effectsSet.addAll(Arrays.asList(effects));
 
@@ -40,7 +41,7 @@ public final class FontData{
                 return  true;
             FontData other = (FontData) obj;
 
-            return this.fontFace.equals(other.fontFace) && this.fontSize == ((FontData) obj).fontSize
+            return this.fontFace.equals(other.fontFace) && this.fontSize == other.fontSize
                     && this.effectSet.equals(other.effectSet);
         }
         return false;

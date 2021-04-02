@@ -15,6 +15,6 @@ public class main {
         weatherData.setMeasure(22, 12, 54);
         weatherData.notifyObserver();
 
-        //
+
     }
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MireaJavaPatterns.iml" filepath="$PROJECT_DIR$/MireaJavaPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mirea_JavaPattern.iml" filepath="$PROJECT_DIR$/.idea/Mirea_JavaPattern.iml" />
     </modules>
   </component>
 </project>
